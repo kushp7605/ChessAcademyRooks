@@ -1,0 +1,371 @@
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 300px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    /* =========================
+       MOBILE NAVBAR
+       ========================= */
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+        margin-right: 8px;
+    }
+
+    /* Hamburger */
+
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        color: #ffd700;
+        border: none;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+        line-height: 1;
+    }
+
+    /* Navigation menu */
+
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: 0;
+
+        width: 220px;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        padding: 15px 0;
+
+        background-color: #081a33;
+
+        border-top: 3px solid #ffd700;
+        border-radius: 0 0 8px 8px;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+        z-index: 1001;
+    }
+
+    /* Open menu */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links a:hover {
+        background-color: #172d58;
+        color: #ffd700;
+        border-bottom: 2px solid #ffd700;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 150px;
+    }
+
+
+    /* =========================
+       SECTIONS
+       ========================= */
+
+    .about-section,
+    .services-section,
+    .courses-section,
+    .coaches-section,
+    .reviews-section,
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+    .about-section h1,
+    .services-section h1,
+    .courses-section h1,
+    .coaches-section h1,
+    .reviews-section h1,
+    .contact-section h1 {
+        font-size: 32px;
+    }
+
+
+    /* =========================
+       ABOUT
+       ========================= */
+
+    .about-section > p {
+        font-size: 17px;
+    }
+
+    .about-image img {
+        width: 250px;
+    }
+
+    .about-card {
+        min-height: auto;
+        padding: 25px 20px;
+        text-align: left;
+    }
+
+    .about-card h3 {
+        font-size: 20px;
+    }
+
+    .about-card p {
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       CARDS
+       ========================= */
+
+    .service-card,
+    .course-card,
+    .coach-card,
+    .review-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Smaller mobile card images */
+
+    .service-card img,
+    .course-card img,
+    .coach-card img,
+    .review-card img {
+        width: 75%;
+        height: 130px;
+    }
+
+
+    /* =========================
+       CONTACT
+       ========================= */
+
+    .contact-form {
+        width: 100%;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .enrollment-modal {
+
+        padding: 8px;
+
+    }
+
+
+    .enrollment-container {
+
+        width: 96%;
+
+        max-height: 90vh;
+
+        padding: 25px 15px 18px;
+
+        border-radius: 10px;
+    }
+
+
+    .enrollment-container h1 {
+
+        font-size: 21px;
+
+        padding-right: 20px;
+    }
+
+
+    .enrollment-container > p {
+
+        font-size: 13px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* Stack fields */
+
+    .enrollment-container .form-row {
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .enrollment-container .form-group {
+
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+
+
+    .enrollment-container .form-group label {
+
+        font-size: 13px;
+    }
+
+
+    .enrollment-container .form-group input,
+    .enrollment-container .form-group select,
+    .enrollment-container .form-group textarea {
+
+        font-size: 14px;
+
+        padding: 9px;
+    }
+
+
+    /* Buttons */
+
+    .enrollment-buttons {
+
+        flex-direction: column-reverse;
+
+        gap: 8px;
+
+    }
+
+
+    .back-button,
+    .submit-button {
+
+        width: 100%;
+
+        padding: 11px;
+
+    }
+
+}

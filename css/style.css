@@ -1,0 +1,1673 @@
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #081a33;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #081a33;
+    padding: 10px 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 1000;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #ffd700;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+
+    margin-right: 10px;
+
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 8px 5px;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+.nav-links a.active {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+/* ====================================== 
+HAMBURGER MENU ============================ */
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+color:#ffd700;
+font-size:30px;
+cursor:pointer;
+padding:5px;
+transition:0.3s;
+}
+
+.menu-toggle:hover{
+color:#ffffff;
+transform:scale(1.1);
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    width: 100%;
+    padding-top: 75px;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+
+/* =========================================
+   HERO SECTION - BLUE
+========================================= */
+
+.hero-section {
+    min-height: calc(100vh - 75px);
+
+    background: linear-gradient(
+        135deg,
+        #172d58,
+        #1b3564
+    );
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: #ffd700;
+
+    font-size: 48px;
+
+    margin-bottom: 25px;
+
+    line-height: 1.2;
+
+    text-shadow:
+        0 0 10px rgba(255, 215, 0, 0.15);
+}
+
+.hero-text p {
+    color: #ffffff;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+.hero-image {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 200px;
+
+    transition: 0.5s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.08) rotate(3deg);
+
+    filter:
+        drop-shadow(
+            0 0 15px rgba(255, 215, 0, 0.25)
+        );
+}
+
+
+/* =========================================
+   GENERAL SECTION
+========================================= */
+
+.about-section,
+.services-section,
+.courses-section,
+.coaches-section,
+.reviews-section,
+.contact-section {
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   ALTERNATING SECTION BACKGROUNDS
+========================================= */
+
+/* GREEN SECTIONS */
+
+.about-section,
+.courses-section,
+.reviews-section {
+    background: linear-gradient(
+        135deg,
+        #173a43,
+        #234b57
+    );
+
+    color: #ffffff;
+}
+
+
+/* BLUE SECTIONS */
+
+.services-section,
+.coaches-section,
+.contact-section {
+    background: linear-gradient(
+        135deg,
+        #172d58,
+        #1b3564
+    );
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.about-section h1,
+.services-section h1,
+.courses-section h1,
+.coaches-section h1,
+.reviews-section h1,
+.contact-section h1 {
+    font-size: 40px;
+
+    color: #ffd700;
+
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.about-section h1::after,
+.services-section h1::after,
+.courses-section h1::after,
+.coaches-section h1::after,
+.reviews-section h1::after,
+.contact-section h1::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background-color: #ffd700;
+
+    margin: 10px auto 0;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+
+/* =========================================
+   SECTION DESCRIPTION
+========================================= */
+
+.section-description,
+.services-section > p,
+.courses-section > p,
+.coaches-section > p,
+.reviews-section > p,
+.contact-section > p {
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+
+    font-size: 17px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+    min-height: 700px;
+}
+
+
+/* About heading */
+
+.about-section h1 {
+    font-size: 44px;
+
+    color: #ffd700;
+
+    margin-bottom: 10px;
+}
+
+
+/* About welcome text */
+
+.about-section > p {
+    font-size: 20px;
+
+    color: #ffd700;
+
+    font-weight: bold;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================
+   ABOUT CONTAINER
+========================================= */
+
+.about-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   ABOUT IMAGE
+========================================= */
+
+.about-image {
+    width: 40%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/*
+   IMPORTANT:
+   About image is NOT inside a card.
+*/
+
+.about-image img {
+    width: 380px;
+
+    max-width: 85%;
+
+    height: auto;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    transition: 0.4s;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+
+    filter:
+        drop-shadow(
+            0 0 15px rgba(255, 215, 0, 0.25)
+        );
+}
+
+
+/* =========================================
+   ABOUT CONTENT
+========================================= */
+
+.about-content {
+    width: 45%;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   MISSION / VISION / VALUES CARDS
+========================================= */
+
+.about-card {
+    width: 100%;
+
+    min-height: 190px;
+
+    padding: 35px 40px;
+
+    margin-bottom: 25px;
+
+    background-color: #211f49;
+
+    border: 2px solid transparent;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.3);
+
+    transition: 0.4s;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* Card hover */
+
+.about-card:hover {
+    border-color: #ffd700;
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 25px rgba(255, 215, 0, 0.2);
+}
+
+
+/* Card headings */
+
+.about-card h3 {
+    color: #ffd700;
+
+    font-size: 22px;
+
+    margin-bottom: 14px;
+}
+
+
+/* Card paragraphs */
+
+.about-card p {
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   SERVICES / COURSES / COACHES / REVIEWS
+========================================= */
+
+.services-container,
+.courses-container,
+.coaches-container,
+.reviews-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.service-card,
+.course-card,
+.coach-card,
+.review-card {
+    width: 300px;
+
+    padding: 25px;
+
+    background-color: #211f49;
+
+    border: 2px solid transparent;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.3);
+
+    transition: 0.4s;
+}
+
+
+/* Alternate card color */
+
+.service-card:nth-child(even),
+.course-card:nth-child(even),
+.coach-card:nth-child(even),
+.review-card:nth-child(even) {
+    background-color: #282653;
+}
+
+
+/* Card hover */
+
+.service-card:hover,
+.course-card:hover,
+.coach-card:hover,
+.review-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #ffd700;
+
+    box-shadow:
+        0 10px 30px rgba(255, 215, 0, 0.22);
+}
+
+
+/* =========================================
+   CARD IMAGES - SMALLER
+========================================= */
+
+.service-card img,
+.course-card img,
+.coach-card img,
+.review-card img {
+    width: 80%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    margin: 0 auto 20px;
+
+    border-radius: 8px;
+
+    transition: 0.4s;
+}
+
+
+/* Image hover */
+
+.service-card:hover img,
+.course-card:hover img,
+.coach-card:hover img,
+.review-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   CARD HEADINGS
+========================================= */
+
+.service-card h2,
+.course-card h2,
+.coach-card h2,
+.review-card h2 {
+    color: #ffd700;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+
+/* Heading hover */
+
+.service-card h2:hover,
+.course-card h2:hover,
+.coach-card h2:hover,
+.review-card h2:hover {
+    color: #ffffff;
+}
+
+
+/* Card paragraphs */
+
+.service-card p,
+.course-card p,
+.coach-card p,
+.review-card p {
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+.course-card h3 {
+    color: #dddddd;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   JOIN BUTTON
+========================================= */
+
+.join-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 25px;
+
+    background-color: #172d58;
+
+    color: #ffffff;
+
+    border: 2px solid #ffd700;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.join-button:hover {
+    background-color: #ffd700;
+
+    border-color: #ffd700;
+
+    color: #000000;
+
+    transform: scale(1.06);
+
+    box-shadow:
+        0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+
+/* =========================================
+   COACHES
+========================================= */
+
+.coach-card p {
+    margin: 5px 0;
+}
+
+
+/* =========================================
+   REVIEWS
+========================================= */
+
+.review-card {
+    border-top: 5px solid #ffd700;
+}
+
+.review-card:hover {
+    border-top-color: #ffffff;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 50px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-info {
+    width: 40%;
+
+    text-align: left;
+
+    padding: 30px;
+
+    background-color: #211f49;
+
+    border: 2px solid transparent;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+.contact-info:hover {
+    border-color: #ffd700;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px rgba(255, 215, 0, 0.2);
+}
+
+.contact-info h2 {
+    color: #ffd700;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+}
+
+.contact-info h2:first-child {
+    margin-top: 0;
+}
+
+.contact-info p {
+    color: #ffffff;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form {
+    width: 45%;
+
+    text-align: left;
+
+    padding: 30px;
+
+    background-color: #211f49;
+
+    border: 2px solid transparent;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+.contact-form:hover {
+    border-color: #ffd700;
+
+    box-shadow:
+        0 8px 25px rgba(255, 215, 0, 0.2);
+}
+
+
+/* Form labels */
+
+.contact-form label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+    color: #ffd700;
+}
+
+
+/* Form inputs */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    background-color: #ffffff;
+
+    color: #222222;
+
+    transition: 0.3s;
+}
+
+
+/* Input hover */
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #ffd700;
+}
+
+
+/* Input focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+
+    border: 2px solid #ffd700;
+
+    box-shadow:
+        0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+
+/* Textarea */
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* Submit button */
+
+.contact-form button {
+    padding: 12px 30px;
+
+    background-color: #172d58;
+
+    color: #ffffff;
+
+    border: 2px solid #ffd700;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ffd700;
+
+    border-color: #ffd700;
+
+    color: #000000;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #081a33;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 0;
+
+    border-top: 4px solid #ffd700;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffd700;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* =========================================================
+   JAVASCRIPT SLIDER
+   ========================================================= */
+
+.js-slider {
+    position: relative;
+}
+
+
+/* Slider Buttons */
+
+.js-slider-button {
+    width: 45px;
+    height: 45px;
+
+    background-color: #172d58;
+
+    color: #ffd700;
+
+    border: 2px solid #ffd700;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.3s;
+
+    margin: 20px 8px;
+}
+
+
+.js-slider-button:hover {
+    background-color: #ffd700;
+
+    color: #000000;
+
+    transform: scale(1.1);
+
+    box-shadow:
+        0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+
+/* Put controls in center */
+
+.js-slider-prev,
+.js-slider-next {
+    display: inline-flex;
+}
+
+
+/* Slider Dots */
+
+.js-slider-dots {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.js-slider-dot {
+    width: 11px;
+
+    height: 11px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.js-slider-dot:hover {
+    background-color: #ffd700;
+
+    transform: scale(1.2);
+}
+
+
+.js-slider-dot.active {
+    width: 28px;
+
+    border-radius: 10px;
+
+    background-color: #ffd700;
+}
+
+
+/* =========================================================
+   JAVASCRIPT SECTION ANIMATION
+   ========================================================= */
+
+.js-hidden {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+
+.js-visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ABOUT CARD SELECT EFFECT
+   ========================================================= */
+
+.about-card.selected {
+    border-color: #ffd700;
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+
+/* =========================================================
+   SCROLL TO TOP
+   ========================================================= */
+
+#scrollTopButton {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffd700;
+
+    background-color: #172d58;
+
+    color: #ffd700;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition: 0.3s;
+
+    z-index: 9999;
+}
+
+
+#scrollTopButton.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+#scrollTopButton:hover {
+
+    background-color: #ffd700;
+
+    color: #000000;
+
+    transform: scale(1.1);
+
+    box-shadow:
+        0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* =====================================================
+   COURSE ENROLLMENT MODAL
+===================================================== */
+
+.enrollment-modal {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.70);
+
+    z-index: 99999;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SHOW MODAL
+===================================================== */
+
+.enrollment-modal.active {
+
+    display: flex;
+}
+
+
+/* =====================================================
+   SMALLER ENROLLMENT CONTAINER
+===================================================== */
+
+.enrollment-container {
+
+    position: relative;
+
+    width: 92%;
+
+    max-width: 720px;
+
+    max-height: 82vh;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 25px 30px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.enrollment-container h1 {
+
+    margin: 0 0 5px;
+
+    text-align: center;
+
+    color: #081a33;
+
+    font-size: 25px;
+}
+
+
+.enrollment-container > p {
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 14px;
+
+    margin: 0 0 18px;
+}
+
+
+/* =====================================================
+   CLOSE X BUTTON
+===================================================== */
+
+.close-enrollment {
+
+    position: absolute;
+
+    top: 8px;
+
+    right: 10px;
+
+    width: 32px;
+
+    height: 32px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #333;
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    line-height: 30px;
+
+    transition: 0.3s;
+}
+
+
+.close-enrollment:hover {
+
+    background: #eeeeee;
+
+    color: #d00000;
+}
+
+
+/* =====================================================
+   FORM ROW
+===================================================== */
+
+.enrollment-container .form-row {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.enrollment-container .form-group {
+
+    flex: 1;
+
+    margin-bottom: 12px;
+}
+
+
+.enrollment-container .form-group.full-width {
+
+    width: 100%;
+
+    flex: none;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.enrollment-container .form-group label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #081a33;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.enrollment-container .form-group input,
+.enrollment-container .form-group select,
+.enrollment-container .form-group textarea {
+
+    width: 100%;
+
+    padding: 9px 11px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* =====================================================
+   INPUT FOCUS
+===================================================== */
+
+.enrollment-container .form-group input:focus,
+.enrollment-container .form-group select:focus,
+.enrollment-container .form-group textarea:focus {
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 0 0 2px rgba(212, 175, 55, 0.15);
+}
+
+
+/* =====================================================
+   COURSE LEVEL
+===================================================== */
+
+#courseLevel {
+
+    background: #f2f2f2;
+
+    font-weight: 600;
+
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+.enrollment-container .form-group textarea {
+
+    min-height: 70px;
+
+    resize: vertical;
+}
+
+
+/* =====================================================
+   BUTTON CONTAINER
+===================================================== */
+
+.enrollment-buttons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.back-button {
+
+    padding: 10px 22px;
+
+    border: 1px solid #081a33;
+
+    border-radius: 6px;
+
+    background: #081a33;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.back-button:hover {
+
+    background: gold;
+
+    color: #081a33;
+
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.submit-button {
+
+    padding: 10px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #081a33;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.submit-button:hover {
+
+    background: gold;
+    color: #081a33;;
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .enrollment-modal {
+
+        padding: 8px;
+
+    }
+
+
+    .enrollment-container {
+
+        width: 96%;
+
+        max-height: 90vh;
+
+        padding: 25px 15px 18px;
+
+        border-radius: 10px;
+    }
+
+
+    .enrollment-container h1 {
+
+        font-size: 21px;
+
+        padding-right: 20px;
+    }
+
+
+    .enrollment-container > p {
+
+        font-size: 13px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* Stack fields */
+
+    .enrollment-container .form-row {
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .enrollment-container .form-group {
+
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+
+
+    .enrollment-container .form-group label {
+
+        font-size: 13px;
+    }
+
+
+    .enrollment-container .form-group input,
+    .enrollment-container .form-group select,
+    .enrollment-container .form-group textarea {
+
+        font-size: 14px;
+
+        padding: 9px;
+    }
+
+
+    /* Buttons */
+
+    .enrollment-buttons {
+
+        flex-direction: column-reverse;
+
+        gap: 8px;
+
+    }
+
+
+    .back-button,
+    .submit-button {
+
+        width: 100%;
+
+        padding: 11px;
+
+    }
+
+}
+
+@media(max-width:600px){
+    .enrollment-modal{
+        align-items:flex-start;
+        padding:80px 15px 30px;
+    }
+
+    .enrollment-container{
+        padding:30px 20px;
+    }
+
+    .form-row{
+        flex-direction:column;
+        gap:0;
+        margin-bottom:0;
+    }
+
+    .enrollment-container h1{
+        font-size:28px;
+    }
+
+    .submit-button{
+        width:100%;
+    }
+}
+
+/* ========== MOBILE SLIDER ====================================*/
+
+@media (max-width: 600px) {
+
+    .js-slider-button {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 20px;
+
+    }
+
+    .js-slider-dots {
+
+        margin-top: 5px;
+
+    }
+
+    #scrollTopButton {
+
+        right: 15px;
+
+        bottom: 15px;
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 20px;
+
+    }
+
+}

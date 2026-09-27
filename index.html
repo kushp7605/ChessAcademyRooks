@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Rook's Chess Academy</title>
+        <link rel="shortcut icon" href="images/logo.webp" type="image/webp">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <img src="images/logo-1.webp"
+                        alt="The Rook's Chess Academy Logo">
+                    <span>RCA</span>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open Navigation">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#courses">COURSES</a></li>
+                    <li><a href="#coaches">COACHES</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>THE ROOK'S CHESS ACADEMY</h1>
+                        <p>"Unlock the secrets of chess mastery at The Rook's Chess Academy—where every move counts, and champions are made!"</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/rookblack.webp" alt="Black Chess Rook">
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <h1>About Us</h1>
+                <p>Welcome to The Rook's Chess Academy</p>
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="images/game.webp" alt="Chess Game">
+                    </div>
+                    <div class="about-content">
+                        <div class="about-card">
+                            <h3>Our Mission</h3>
+                            <p>To make chess accessible, enjoyable, and
+                                rewarding for everyone. We believe chess
+                                enhances critical thinking, problem-solving
+                                skills, and strategic awareness.</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>Our Vision</h3>
+                            <p>To create a global community of chess enthusiasts
+                                dedicated to mastering the game and inspiring
+                                future generations.</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>Our Values</h3>
+                            <p>We value inclusivity, passion, dedication, and
+                                continuous improvement.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="services-section">
+                <h1>Our Services</h1>
+                <p class="section-description">Our services are designed to
+                    provide top-notch educational experiences, tailored to your
+                    unique learning needs.</p>
+                <div class="services-container">
+                    <div class="service-card">
+                        <img src="images/services-1.webp"
+                            alt="Online One-to-One Chess Classes">
+                        <h2>Online One-to-One Classes</h2>
+                        <p>Personalized learning experiences in a virtual
+                            setting with expert instructors.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/services-2.webp"
+                            alt="Online Group Chess Classes">
+                        <h2>Online Group Classes</h2>
+                        <p>Interactive learning in a collaborative online
+                            environment with peers.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/services-3.webp"
+                            alt="Private Home Chess Tuition">
+                        <h2>Private Home Tuition</h2>
+                        <p>One-on-one sessions in the comfort of your home for a
+                            more focused approach.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="courses" class="courses-section">
+                <h1>Our Courses</h1>
+                <p>Unlock your chess potential with our expert-driven,
+                    skill-enhancing courses.</p>
+                <div class="courses-container">
+                    <div class="course-card">
+                        <img src="images/Courses/pawn.webp"
+                            alt="Beginner Chess Course">
+                        <h2>Beginner's Edge</h2>
+                        <h3>Basic Level</h3>
+                        <p>Start your chess journey with a solid foundation.
+                            Master the basics, from piece movement to opening
+                            strategies.</p>
+                        <button
+                            type="button"
+                            class="join-button"
+                            onclick="openEnrollment('Basic Level')">Join Now
+                        </button>
+                    </div>
+                    <div class="course-card">
+                        <img src="images/Courses/rook1.webp"
+                            alt="Intermediate Chess Course">
+                        <h2>Master Tactics</h2>
+                        <h3>Intermediate Level</h3>
+                        <p>Unlock tactical brilliance and explore intermediate
+                            strategies that let you outplay your opponents.</p>
+                        <button
+                            type="button"
+                            class="join-button"
+                            onclick="openEnrollment('Intermediate Level')">Join
+                            Now
+                        </button>
+                    </div>
+                    <div class="course-card">
+                        <img src="images/Courses/crown.webp"
+                            alt="Advanced Chess Course">
+                        <h2>Grandmaster's Path</h2>
+                        <h3>Advanced Level</h3>
+                        <p>Learn advanced endgames, elite tactics, and improve
+                            your overall chess game.</p>
+                        <button
+                            type="button"
+                            class="join-button"
+                            onclick="openEnrollment('Advanced Level')">Join Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="coaches" class="coaches-section">
+                <h1>Meet Professional Coaches</h1>
+                <p>Our team of professional coaches brings years of competitive
+                    experience and teaching excellence to the table.</p>
+                <div class="coaches-container">
+                    <div class="coach-card">
+                        <img src="images/team/gill.webp" alt="Ravi Gill">
+                        <h2>Ravi Gill</h2>
+                        <p>Founder</p>
+                    </div>
+                    <div class="coach-card">
+                        <img src="images/team/joy.webp" alt="Joy Shah">
+                        <h2>Joy Shah</h2>
+                        <p>Coach</p>
+                        <p>FIDE Rating: 2144</p>
+                        <p>13+ times Gujarat State Champion</p>
+                    </div>
+                    <div class="coach-card">
+                        <img src="images/team/sinha.webp" alt="Santosh Sinha">
+                        <h2>Santosh Sinha</h2>
+                        <p>Coach</p>
+                        <p>FIDE Rating: 1804</p>
+                        <p>All India Inter University Winner</p>
+                    </div>
+                    <div class="coach-card">
+                        <img src="images/team/naitik.webp" alt="Naitik Mehta">
+                        <h2>Naitik Mehta</h2>
+                        <p>Coach</p>
+                        <p>FIDE Rating: 1953</p>
+                        <p>17 times Gujarat State Champion</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reviews" class="reviews-section">
+                <h1>Feedback From Our Students</h1>
+                <p>Hear from our students and parents about their experiences at
+                    The Rook's Chess Academy.</p>
+                <div class="reviews-container">
+                    <div class="review-card">
+                        <img src="images/Reviews/A.webp" alt="Student">
+                        <h2>Abishek Jenasenan</h2>
+                        <p>Ravi Gill teaches my daughter chess online. The
+                            classes are excellent and my daughter enjoys
+                            learning chess.</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="images/Reviews/J.webp" alt="Student">
+                        <h2>Jia Hinduja</h2>
+                        <p>Ravi Sir is beyond amazing. He modifies his teaching
+                            method according to the child.</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="images/Reviews/Sarah.webp" alt="Student">
+                        <h2>Sarah Johnson</h2>
+                        <p>The Rook's Academy provides a flexible and supportive
+                            learning environment.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h1>Contact Us</h1>
+                <p>Have questions or ready to begin your chess journey? Reach
+                    out to us—we're here to help!</p>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Location</h2>
+                        <p>Shiv Shakti Complex<br>Opp. Good Luck
+                            Hall<br>Maninagar, Ahmedabad, Gujarat<br>380008</p>
+                        <h2>Email</h2>
+                        <p>therooksacademy@gmail.com</p>
+                        <h2>Phone</h2>
+                        <p>+91 9157008092<br>+1 (226) 961-9662</p>
+                    </div>
+                    <div class="contact-form">
+                        <form action="contact.php" method="post" id="contactForm">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"
+                                required>
+                            <label for="mobile">Mobile Number:</label>
+                            <input type="text" id="mobile" name="mobile"
+                                required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5"
+                                required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- =====================================================
+     COURSE ENROLLMENT MODAL
+===================================================== -->
+
+        <div id="enrollmentModal" class="enrollment-modal">
+
+            <div class="enrollment-container">
+
+                <!-- CLOSE BUTTON -->
+                <button
+                    type="button"
+                    class="close-enrollment"
+                    onclick="closeEnrollment()">
+                    &times;
+                </button>
+
+                <h1>Course Enrollment</h1>
+
+                <p>
+                    Fill in the details below to enroll
+                    at The Rook's Chess Academy.
+                </p>
+
+                <!-- ENROLLMENT FORM -->
+
+                <form
+                    id="enrollmentForm"
+                    action="insert.php"
+                    method="POST">
+
+                    <!-- COURSE + STUDENT NAME -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="courseLevel">
+                                Course Level
+                            </label>
+
+                            <input
+                                type="text"
+                                id="courseLevel"
+                                name="course_level"
+                                readonly
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="studentName">
+                                Student Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                name="student_name"
+                                placeholder="Enter student name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- AGE + GENDER -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="age">
+                                Age
+                            </label>
+
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                min="4"
+                                max="100"
+                                placeholder="Enter age"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <select
+                                id="gender"
+                                name="gender"
+                                required>
+
+                                <option value>
+                                    Select Gender
+                                </option>
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                                <option value="Prefer not to say">
+                                    Prefer not to say
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PARENT NAME + PHONE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="parentName">
+                                Parent / Guardian Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="parentName"
+                                name="parent_name"
+                                placeholder="Enter parent name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="parentPhone">
+                                Parent / Guardian Phone
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="parentPhone"
+                                name="parent_phone"
+                                placeholder="10-digit phone number"
+                                pattern="[0-9]{10}"
+                                maxlength="10"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- EMAIL + ADDRESS -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter email"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="address">
+                                Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                placeholder="Enter address">
+
+                        </div>
+
+                    </div>
+
+                    <!-- DATE + TIME -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="preferredDate">
+                                Preferred Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="preferredDate"
+                                name="preferred_date"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="preferredTime">
+                                Preferred Time
+                            </label>
+
+                            <input
+                                type="time"
+                                id="preferredTime"
+                                name="preferred_time"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CHESS EXPERIENCE -->
+
+                    <div class="form-group full-width">
+
+                        <label for="chessExperience">
+                            Previous Chess Experience
+                        </label>
+
+                        <select
+                            id="chessExperience"
+                            name="chess_experience">
+
+                            <option value>
+                                Select Experience
+                            </option>
+
+                            <option value="No Experience">
+                                No Experience
+                            </option>
+
+                            <option value="Beginner">
+                                Beginner
+                            </option>
+
+                            <option value="Intermediate">
+                                Intermediate
+                            </option>
+
+                            <option value="Advanced">
+                                Advanced
+                            </option>
+
+                            <option value="Competitive Player">
+                                Competitive Player
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group full-width">
+
+                        <label for="message">
+                            Additional Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us about the student's chess goals..."></textarea>
+
+                    </div>
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="submit-button">
+
+                        Submit Enrollment
+
+                    </button>
+
+                    <button type="button"
+                        class="back-button"
+                        onclick="closeEnrollment()">Go Back
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 The Rook's Chess Academy. All Rights Reserved.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
