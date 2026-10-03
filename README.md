@@ -26,7 +26,7 @@ Visitors can explore the academy, view available courses, submit course enrollme
 - Chess-themed visual design
 - Fixed navigation header
 
-### ℹ About
+###  About
 
 - Academy introduction
 - Information about the academy
